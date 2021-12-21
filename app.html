@@ -1,0 +1,617 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hack4Bengal</title>
+
+    <!-- Link -->
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="app.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light" id="nav">
+        <div class="container">
+            <a class="navbar-brand" href="#"> <img id="logo-img" src="assets/img/Hack4Bengal (1).png" alt="" srcset=""> <span id="brand-name">Hack4Bengal</span></a>
+            <button id="toggle-icon" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span  class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul id="navbar-links" class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a id="nav-items" class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="nav-items" class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="nav-items" class="nav-link" href="#">Sponsors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="nav-items" class="nav-link" href="#">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="nav-items" class="nav-link" href="#">FAQs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="nav-items" class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- carousel section -->
+
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Event 1</h1>
+                        <p>Some description of the event</p>
+                        <p><a id="carousel-btn" href="#">Learn more</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Event 2</h1>
+                        <p>Some description of the event</p>
+                        <p><a id="carousel-btn" href="#">Learn more</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Event 3</h1>
+                        <p>Some description of the event</p>
+                        <p><a id="carousel-btn" href="#">Learn more</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- content section -->
+
+    <main id="main">
+
+        <div class="album py-5">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img class="bd-placeholder-img card-img-top" width="100%" height="400" src="assets/img/sponsor.png" />
+                            <div class="card-body">
+                                <h3 class="card-title">Sponsors Deck</h3>
+                                <p class="card-text">Some description goes here.......</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a id="main-btn" href="">View</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img class="bd-placeholder-img card-img-top" width="100%" height="400" src="assets/img/Timeline-pana.png" />
+                            <div class="card-body">
+                                <h3 class="card-title">Timeline</h3>
+                                <p class="card-text">Some description goes here.......</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a id="main-btn" href="">Apply</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img class="bd-placeholder-img card-img-top" width="100%" height="400" src="assets/img/Server-amico.png" />
+                            <div class="card-body">
+                                <h3 class="card-title">Join Discord</h3>
+                                <p class="card-text">Some description goes here.......</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a id="main-btn" href="">Join</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- content - 2 section -->
+
+    <div class="container px-4 py-5" id="custom-cards">
+
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+            <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('assets/img/Finance-bro.png');">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                        <br>
+                        <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold" id="main-head">Sponsors Deck</h2>
+                        <a id="main-btn" href="">View</a>
+                        <br>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('assets/img/Calendar-rafiki.png');">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                        <br>
+                        <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold" id="main-head">Timeline</h2>
+                        <a id="main-btn" href="">Apply</a>
+                        <br>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('assets/img/Server-amico.png');">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                        <br>
+                        <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold" id="main-head">Discord</h2>
+                        <a id="main-btn" href="">Join</a>
+                        <br>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- About section -->
+
+    <div id="about-1">
+        <h3 id="about-section" class="text-center ">About</h3>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <p id="about">HACK4BENGAL began with the idea of bringing together the best of the best in the field of technology and provide a platform for the students to showcase their skills and work.</p>
+                    <ul id="about-ul">
+                        <li id="about-list">Get the feel of a Physical Hackathon even Digitally</li>
+                        <li id="about-list">Get rewarded for the work you do, and always win!</li>
+                        <li id="about-list">More than 6 months of planning, and here we are</li>
+                    </ul>
+                </div>
+                <div class="col-sm-6">
+                    <p id="snu-about">Sister Nivedita University, Deptartment of Computer Science and Engineering, Technical Committee was created to deal with all the technical Activities, Events, Clubs, Technical Chapters within the University. It has over 15 Chapters.
+                        Active 50+ Core Members and 1500+ Participating Members.
+                    </p>
+                    <br>
+                    <a id="snu-btn" href="">Visit website</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="about-details">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <br>
+                    <br>
+                    <img width="380" height="380" src="assets/img/Awards-rafiki.png" alt="">
+                </div>
+                <div class="col-sm-6">
+                    <div class="list-group list-group-checkable">
+                        <input class="list-group-item-check" type="radio" name="listGroupCheckableRadios" id="listGroupCheckableRadios1" value="" checked>
+                        <input class="list-group-item-check" type="radio" name="listGroupCheckableRadios" id="listGroupCheckableRadios2" value="">
+                        <label class="list-group-item py-3" for="listGroupCheckableRadios2">
+                        <span id="about-list-head">1500+</span>
+                      <span id="about-list-desc class="d-block small opacity-50"><b>Enthusiastic Members</b> who are ready to give their time for the community</span>
+                    </label>
+
+                        <input class="list-group-item-check" type="radio" name="listGroupCheckableRadios" id="listGroupCheckableRadios2" value="">
+                        <label class="list-group-item py-3" for="listGroupCheckableRadios2">
+                        <span id="about-list-head">85</span>
+                      <span  id="about-list-descclass="d-block small opacity-50"><b>Events</b> Already undertaken by various clubs under SKEPSIS and many more to go</span>
+                    </label>
+
+                        <input class="list-group-item-check" type="radio" name="listGroupCheckableRadios" id="listGroupCheckableRadios3" value="">
+                        <label class="list-group-item py-3" for="listGroupCheckableRadios3">
+                        <span id="about-list-head">4+</span>
+                      <span id="about-list-desc class="d-block small opacity-50"><b>Years of experience</b> in community building and here we are with a huge community</span>
+                    </label>
+
+                        <input class="list-group-item-check" type="radio" name="listGroupCheckableRadios" id="listGroupCheckableRadios3" value="">
+                        <label class="list-group-item py-3" for="listGroupCheckableRadios3">
+                        <span id="about-list-head">38</span>
+                      <span id="about-list-desc class="d-block small opacity-50"><b>Awards</b> which redefines the concept of education in West Bengal</span>
+                    </label>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <br><br><br><br><br><br><br>
+
+    <!-- Sponsors section -->
+
+    <div class="container marketing">
+
+
+        <!-- Platinum -->
+        <h3 id="sponsor-head" class="text-center">Platinum Sponsors</h3>
+
+        <div class="row pt-3 pb-3">
+
+            <div class="col-lg-2">
+                <a href="">
+                    <div id="card-body">
+                        <img class="bd-placeholder-img" width="160" height="100" src="assets/img/clients/client-2.png" />
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-lg-2">
+                <a href="">
+                    <div id="card-body">
+                        <img class="bd-placeholder-img" width="160" height="100" src="assets/img/clients/client-2.png" />
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-lg-2">
+                <a href="">
+                    <div id="card-body">
+                        <img class="bd-placeholder-img" width="160" height="100" src="assets/img/clients/client-2.png" />
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-lg-2">
+                <a href="">
+                    <div id="card-body">
+                        <img class="bd-placeholder-img" width="160" height="100" src="assets/img/clients/client-2.png" />
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-lg-2">
+                <a href="">
+                    <div id="card-body">
+                        <img class="bd-placeholder-img" width="160" height="100" src="assets/img/clients/client-2.png" />
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-lg-2">
+                <a href="">
+                    <div id="card-body">
+                        <img class="bd-placeholder-img" width="160" height="100" src="assets/img/clients/client-2.png" />
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+        <br><br><br>
+
+        <!-- Gold -->
+
+        <h3 id="sponsor-head" class="text-center">Gold sponsors</h3>
+
+        <div class="row pt-3 pb-3">
+
+            <div class="col-lg-3">
+                <a href="">
+                    <div id="card-body">
+                        <img class="bd-placeholder-img" width="160" height="100" src="assets/img/clients/client-2.png" />
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-lg-3">
+                <a href="">
+                    <div id="card-body">
+                        <img class="bd-placeholder-img" width="160" height="100" src="assets/img/clients/client-2.png" />
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-lg-3">
+                <a href="">
+                    <div id="card-body">
+                        <img class="bd-placeholder-img" width="160" height="100" src="assets/img/clients/client-2.png" />
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-lg-3">
+                <a href="">
+                    <div id="card-body">
+                        <img class="bd-placeholder-img" width="160" height="100" src="assets/img/clients/client-2.png" />
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+        <br><br><br>
+
+        <!-- silver -->
+
+        <h3 id="sponsor-head" class="text-center">Silver Sponsors</h3>
+
+        <div class="row pt-3 pb-3">
+
+            <div class="col-lg-3">
+                <a href="">
+                    <div id="card-body">
+                        <img class="bd-placeholder-img" width="160" height="100" src="assets/img/clients/client-2.png" />
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-lg-3">
+                <a href="">
+                    <div id="card-body">
+                        <img class="bd-placeholder-img" width="160" height="100" src="assets/img/clients/client-2.png" />
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-lg-3">
+                <a href="">
+                    <div id="card-body">
+                        <img class="bd-placeholder-img" width="160" height="100" src="assets/img/clients/client-2.png" />
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-lg-3">
+                <a href="">
+                    <div id="card-body">
+                        <img class="bd-placeholder-img" width="160" height="100" src="assets/img/clients/client-2.png" />
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Team -->
+
+    <div id="team">
+        <div class="container">
+
+            <h3 id="team-head" class="text-center pt-5">Organisers</h3>
+
+            <div class="row pt-3 pb-3">
+                <div class="col-lg-3 text-center">
+                    <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="assets/img/team/team-1.jpg" />
+
+                    <p id="details-p"><a href=""><i id="details-icon" class="fab fa-twitter"></i></a>
+                        <a href=""><i id="details-icon" class="fab fa-facebook"></i></a>
+                        <a href=""><i id="details-icon" class="fab fa-instagram"></i></a>
+                        <a href=""><i id="details-icon" class="fab fa-linkedin"></i></a>
+                    </p>
+
+                    <h4 id="details-name">Manish kumar</h4>
+                    <h5 id="details-description">Github campus expert</h5>
+                </div>
+
+                <div class="col-lg-3 text-center">
+                    <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="assets/img/team/team-1.jpg" />
+
+                    <p id="details-p"><a href=""><i id="details-icon" class="fab fa-twitter"></i></a>
+                        <a href=""><i id="details-icon" class="fab fa-facebook"></i></a>
+                        <a href=""><i id="details-icon" class="fab fa-instagram"></i></a>
+                        <a href=""><i id="details-icon" class="fab fa-linkedin"></i></a>
+                    </p>
+
+                    <h4 id="details-name">Manish kumar</h4>
+                    <h5 id="details-description">Github campus expert</h5>
+                </div>
+
+                <div class="col-lg-3 text-center">
+                    <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="assets/img/team/team-1.jpg" />
+
+                    <p id="details-p"><a href=""><i id="details-icon" class="fab fa-twitter"></i></a>
+                        <a href=""><i id="details-icon" class="fab fa-facebook"></i></a>
+                        <a href=""><i id="details-icon" class="fab fa-instagram"></i></a>
+                        <a href=""><i id="details-icon" class="fab fa-linkedin"></i></a>
+                    </p>
+
+                    <h4 id="details-name">Manish kumar</h4>
+                    <h5 id="details-description">Github campus expert</h5>
+                </div>
+
+                <div class="col-lg-3 text-center">
+                    <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="assets/img/team/team-1.jpg" />
+
+                    <p id="details-p"><a href=""><i id="details-icon" class="fab fa-twitter"></i></a>
+                        <a href=""><i id="details-icon" class="fab fa-facebook"></i></a>
+                        <a href=""><i id="details-icon" class="fab fa-instagram"></i></a>
+                        <a href=""><i id="details-icon" class="fab fa-linkedin"></i></a>
+                    </p>
+
+                    <h4 id="details-name">Manish kumar</h4>
+                    <h5 id="details-description">Github campus expert</h5>
+                </div>
+
+            </div>
+        </div>
+
+        <br><br><br>
+    </div>
+
+
+    <!-- Faq -->
+
+    <div id="faq">
+
+
+        <div id="" class="container">
+
+            <h3 id="faq-head" class="text-center pt-5">FAQs</h3>
+
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      
+                        WHAT IS A HACKATHON?
+                    </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            A hackathon is social coding event where programmers, designers and developers collaborate to solve a problem and compete for cash prizes. It’s one part party, one part work-hard overnight battle against the clock and the competition.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            WHY WOULD SOMEONE PARTICIPATE IN A HACKATHON?
+                    </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">People participate in hackathons for lots of reason: the challenge, the creative outlet, the community collaboration, the networking, the swag and maybe Prizes!</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            WHO CAN PARTICIPATE? ARE THERE ANY PREREQUISITES OR REQUIRED SKILLS?
+                    </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Anyone is welcome to participate in this event. While experience coding and programming is a huge plus, teams will also need people with strong presentation skills and brilliant ideas.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            WHY WOULD SOMEONE PARTICIPATE IN A HACKATHON?
+                    </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">People participate in hackathons for lots of reason: the challenge, the creative outlet, the community collaboration, the networking, the swag and maybe Prizes!</div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            WHY WOULD SOMEONE PARTICIPATE IN A HACKATHON?
+                    </button>
+                    </h2>
+                    <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">People participate in hackathons for lots of reason: the challenge, the creative outlet, the community collaboration, the networking, the swag and maybe Prizes!</div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingSix">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            WHY WOULD SOMEONE PARTICIPATE IN A HACKATHON?
+                    </button>
+                    </h2>
+                    <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">People participate in hackathons for lots of reason: the challenge, the creative outlet, the community collaboration, the networking, the swag and maybe Prizes!</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <br><br><br><br><br><br>
+
+    <!-- Footer -->
+
+    <div id="footer">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 text-center">
+                    <p id="footer-details"> &copy; Copyright <b>SKEPSIS</b>. All Rights Reserved</p>
+                </div>
+                <div class="col-sm-6 text-center">
+                    <p id="footer-p"><a href=""><i id="footer-icon" class="fab fa-twitter"></i></a>
+                        <a href=""><i id="footer-icon" class="fab fa-facebook"></i></a>
+                        <a href=""><i id="footer-icon" class="fab fa-instagram"></i></a>
+                        <a href=""><i id="footer-icon" class="fab fa-linkedin"></i></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- ================================================================= -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
