@@ -23,7 +23,6 @@
 
 #navbar-links {
     margin-left: 20%;
-    padding-top: 10px;
 }
 
 #nav-items {
@@ -32,11 +31,20 @@
     padding-right: 15px;
     transition: all 0.2s;
     font-size: 16px;
+    padding-top: 20px;
 }
 
 #nav-items:hover {
     color: rgb(0, 119, 255);
     text-decoration: underline;
+}
+
+#nav-items-dash {
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: all 0.2s;
+    font-size: 16px;
 }
 
 
