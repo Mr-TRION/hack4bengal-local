@@ -27,32 +27,38 @@
 
     <!-- Navbar -->
 
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light" id="nav">
+    <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#"> <img id="logo-img" src="assets/img/Hack4Bengal (1).png" alt="" srcset=""> <span id="brand-name">Hack4Bengal</span></a>
+            <a href="#" class="navbar-brand"><img id="logo-img" src="assets/img/Hack4Bengal (1).png" alt="" srcset=""> <span id="brand-name">Hack<sub id="brand-sub">4</sub>Bengal</span></a>
             <button id="toggle-icon" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span  class="navbar-toggler-icon"></span>
-          </button>
+                <span class="navbar-toggler-icon"></span>
+             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul id="navbar-links" class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul id="navbar-links" class="navbar-nav">
                     <li class="nav-item">
-                        <a id="nav-items" class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a id="nav-items" href="" class="nav-link">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a id="nav-items" class="nav-link" href="#">About</a>
+                        <a id="nav-items" href="" class="nav-link">ABOUT</a>
                     </li>
                     <li class="nav-item">
-                        <a id="nav-items" class="nav-link" href="#">Sponsors</a>
+                        <a id="nav-items" href="" class="nav-link">SPONSORS</a>
                     </li>
                     <li class="nav-item">
-                        <a id="nav-items" class="nav-link" href="#">Team</a>
+                        <a id="nav-items" href="" class="nav-link">TEAM</a>
                     </li>
                     <li class="nav-item">
-                        <a id="nav-items" class="nav-link" href="#">FAQs</a>
+                        <a id="nav-items" href="" class="nav-link">FAQs</a>
                     </li>
                     <li class="nav-item">
-                        <a id="nav-items" class="nav-link" href="#">Contact</a>
+                        <a id="nav-items" href="" class="nav-link">CONTACT</a>
                     </li>
+                    <li class="nav-item">
+                        <a id="nav-items" href="" class="nav-link">
+                            <div class="apply-button" data-hackathon-slug="hack4bengal" data-button-theme="light" style="height: 44px; width: 312px"></div>
+                        </a>
+                    </li>
+
                 </ul>
             </div>
         </div>
@@ -67,19 +73,22 @@
             <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
-            <div class="carousel-item active">
-                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+            <div id="myCarousel-inner" class="carousel-item active">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#142959"/>
+                    <image width="100%" height="100%" href="assets/img/Hack4Bengal (1).png" />
+                </svg>
+                <rect width="100%" height="100%" fill="#777" />
 
                 <div class="container">
-                    <div class="carousel-caption">
-                        <h1>Event 1</h1>
-                        <p>Some description of the event</p>
-                        <p><a id="carousel-btn" href="#">Learn more</a></p>
+                    <div class="carousel-caption text-start">
+                        <h1>Hack4Bengal</h1>
+                        <p>Grab the OPPORTUNITY</p>
+                        <p><a id="carousel-btn" href="#">Register</a></p>
                     </div>
                 </div>
             </div>
-            <div class="carousel-item">
-                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+            <div id="myCarousel-inner" class="carousel-item">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#142959"/></svg>
 
                 <div class="container">
                     <div class="carousel-caption">
@@ -89,8 +98,8 @@
                     </div>
                 </div>
             </div>
-            <div class="carousel-item">
-                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+            <div id="myCarousel-inner" class="carousel-item">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#142959"/></svg>
 
                 <div class="container">
                     <div class="carousel-caption">
@@ -111,97 +120,42 @@
         </button>
     </div>
 
-    <!-- content section -->
 
-    <main id="main">
-
-        <div class="album py-5">
-            <div class="container">
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img class="bd-placeholder-img card-img-top" width="100%" height="400" src="assets/img/sponsor.png" />
-                            <div class="card-body">
-                                <h3 class="card-title">Sponsors Deck</h3>
-                                <p class="card-text">Some description goes here.......</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <a id="main-btn" href="">View</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img class="bd-placeholder-img card-img-top" width="100%" height="400" src="assets/img/Timeline-pana.png" />
-                            <div class="card-body">
-                                <h3 class="card-title">Timeline</h3>
-                                <p class="card-text">Some description goes here.......</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <a id="main-btn" href="">Apply</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img class="bd-placeholder-img card-img-top" width="100%" height="400" src="assets/img/Server-amico.png" />
-                            <div class="card-body">
-                                <h3 class="card-title">Join Discord</h3>
-                                <p class="card-text">Some description goes here.......</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <a id="main-btn" href="">Join</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-    </main>
 
     <!-- content - 2 section -->
 
-    <div class="container px-4 py-5" id="custom-cards">
+    <div id="main-content" class="container px-4 py-5" id="custom-cards">
 
         <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+
+            <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('assets/img/Timeline-rafiki.png');">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                        <br><br><br><br><br><br>
+                        <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center" id="main-head">Timeline</h2>
+                        <a id="main-btn" href="">APPLY</a>
+                        <br>
+                    </div>
+                </div>
+            </div>
+
             <div class="col">
                 <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('assets/img/Finance-bro.png');">
                     <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                        <br>
+                        <br><br><br><br><br><br>
                         <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold" id="main-head">Sponsors Deck</h2>
-                        <a id="main-btn" href="">View</a>
+                        <a id="main-btn" href="">VIEW</a>
                         <br>
                     </div>
                 </div>
             </div>
 
             <div class="col">
-                <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('assets/img/Calendar-rafiki.png');">
-                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                        <br>
-                        <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold" id="main-head">Timeline</h2>
-                        <a id="main-btn" href="">Apply</a>
-                        <br>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('assets/img/Server-amico.png');">
+                <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('assets/img/Server-rafiki.png');">
                     <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-                        <br>
-                        <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold" id="main-head">Discord</h2>
-                        <a id="main-btn" href="">Join</a>
+                        <br><br><br><br><br><br>
+                        <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center" id="main-head">Discord</h2>
+                        <a id="main-btn" href="">JOIN</a>
                         <br>
                     </div>
                 </div>
@@ -213,7 +167,7 @@
     <!-- About section -->
 
     <div id="about-1">
-        <h3 id="about-section" class="text-center ">About</h3>
+        <h3 id="about-section" class="text-center ">ABOUT</h3>
         <br>
         <div class="container">
             <div class="row">
@@ -236,41 +190,45 @@
         </div>
     </div>
 
-    <div id="about-details">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    <br>
-                    <br>
-                    <img width="380" height="380" src="assets/img/Awards-rafiki.png" alt="">
-                </div>
-                <div class="col-sm-6">
-                    <div class="list-group list-group-checkable">
-                        <input class="list-group-item-check" type="radio" name="listGroupCheckableRadios" id="listGroupCheckableRadios1" value="" checked>
-                        <input class="list-group-item-check" type="radio" name="listGroupCheckableRadios" id="listGroupCheckableRadios2" value="">
-                        <label class="list-group-item py-3" for="listGroupCheckableRadios2">
-                        <span id="about-list-head">1500+</span>
-                      <span id="about-list-desc class="d-block small opacity-50"><b>Enthusiastic Members</b> who are ready to give their time for the community</span>
-                    </label>
+    <br>
+    <br>
+    <br>
 
-                        <input class="list-group-item-check" type="radio" name="listGroupCheckableRadios" id="listGroupCheckableRadios2" value="">
-                        <label class="list-group-item py-3" for="listGroupCheckableRadios2">
-                        <span id="about-list-head">85</span>
-                      <span  id="about-list-descclass="d-block small opacity-50"><b>Events</b> Already undertaken by various clubs under SKEPSIS and many more to go</span>
-                    </label>
 
-                        <input class="list-group-item-check" type="radio" name="listGroupCheckableRadios" id="listGroupCheckableRadios3" value="">
-                        <label class="list-group-item py-3" for="listGroupCheckableRadios3">
-                        <span id="about-list-head">4+</span>
-                      <span id="about-list-desc class="d-block small opacity-50"><b>Years of experience</b> in community building and here we are with a huge community</span>
-                    </label>
+    <div>
+        <div id="about-details">
+            <div class="container">
+                <div id="about-details-in">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <br>
+                            <br>
+                            <img id="about-img" src="assets/img/Awards-rafiki.png" alt="">
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="list-group list-group-checkable">
+                                <label class="list-group-item py-3" for="listGroupCheckableRadios2">
+                                <span id="about-list-head">1500+</span>
+                              <span id="about-list-desc class="d-block small opacity-50"><b>Enthusiastic Members</b> who are ready to give their time for the community</span>
+                            </label>
 
-                        <input class="list-group-item-check" type="radio" name="listGroupCheckableRadios" id="listGroupCheckableRadios3" value="">
-                        <label class="list-group-item py-3" for="listGroupCheckableRadios3">
-                        <span id="about-list-head">38</span>
-                      <span id="about-list-desc class="d-block small opacity-50"><b>Awards</b> which redefines the concept of education in West Bengal</span>
-                    </label>
+                                <label class="list-group-item py-3" for="listGroupCheckableRadios2">
+                                <span id="about-list-head">85</span>
+                              <span  id="about-list-desc class="d-block small opacity-50"><b>Events</b> Already undertaken by various clubs under SKEPSIS and many more to go</span>
+                            </label>
 
+                                <label class="list-group-item py-3" for="listGroupCheckableRadios3">
+                                <span id="about-list-head">4+</span>
+                              <span id="about-list-desc class="d-block small opacity-50"><b>Years of experience</b> in community building and here we are with a huge community</span>
+                            </label>
+
+                                <label class="list-group-item py-3" for="listGroupCheckableRadios3">
+                                <span id="about-list-head">38</span>
+                              <span id="about-list-desc class="d-block small opacity-50"><b>Awards</b> which redefines the concept of education in West Bengal</span>
+                            </label>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -286,143 +244,96 @@
 
 
         <!-- Platinum -->
-        <h3 id="sponsor-head" class="text-center">Platinum Sponsors</h3>
+        <h3 id="sponsor-head" class="text-center" style="color: #959484;">Platinum Sponsors</h3>
 
         <div class="row pt-3 pb-3">
 
-            <div class="col-lg-2">
-                <a href="">
+            <div class="col-lg-6">
+                <a href="https://devfolio.co">
                     <div id="card-body">
-                        <img class="bd-placeholder-img" width="160" height="100" src="assets/img/clients/client-2.png" />
+                        <img class="bd-placeholder-img" src="assets/img/Devfolio_Logo-Black.png" />
                     </div>
                 </a>
             </div>
 
-            <div class="col-lg-2">
-                <a href="">
+            <div class="col-lg-6">
+                <a href="https://polygon.technology/">
                     <div id="card-body">
-                        <img class="bd-placeholder-img" width="160" height="100" src="assets/img/clients/client-2.png" />
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-lg-2">
-                <a href="">
-                    <div id="card-body">
-                        <img class="bd-placeholder-img" width="160" height="100" src="assets/img/clients/client-2.png" />
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-lg-2">
-                <a href="">
-                    <div id="card-body">
-                        <img class="bd-placeholder-img" width="160" height="100" src="assets/img/clients/client-2.png" />
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-lg-2">
-                <a href="">
-                    <div id="card-body">
-                        <img class="bd-placeholder-img" width="160" height="100" src="assets/img/clients/client-2.png" />
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-lg-2">
-                <a href="">
-                    <div id="card-body">
-                        <img class="bd-placeholder-img" width="160" height="100" src="assets/img/clients/client-2.png" />
+                        <img class="bd-placeholder-img" src="assets/img/Polygon_Logo-Colored.png" />
                     </div>
                 </a>
             </div>
 
         </div>
 
-        <br><br><br>
+        <br>
 
         <!-- Gold -->
 
-        <h3 id="sponsor-head" class="text-center">Gold sponsors</h3>
+        <h3 id="sponsor-head" class="text-center" style="color: #deb406">Gold sponsors</h3>
 
         <div class="row pt-3 pb-3">
 
-            <div class="col-lg-3">
+            <div class="col-lg-4">
                 <a href="">
                     <div id="card-body">
-                        <img class="bd-placeholder-img" width="160" height="100" src="assets/img/clients/client-2.png" />
+                        <img class="bd-placeholder-img" src="assets/img/Filecoin Black.svg" />
                     </div>
                 </a>
             </div>
 
-            <div class="col-lg-3">
+            <div class="col-lg-4">
                 <a href="">
                     <div id="card-body">
-                        <img class="bd-placeholder-img" width="160" height="100" src="assets/img/clients/client-2.png" />
+                        <img class="bd-placeholder-img" src="assets/img/Celo Logo Color.png" />
                     </div>
                 </a>
             </div>
 
-            <div class="col-lg-3">
+            <div class="col-lg-4">
                 <a href="">
                     <div id="card-body">
-                        <img class="bd-placeholder-img" width="160" height="100" src="assets/img/clients/client-2.png" />
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-lg-3">
-                <a href="">
-                    <div id="card-body">
-                        <img class="bd-placeholder-img" width="160" height="100" src="assets/img/clients/client-2.png" />
+                        <img class="bd-placeholder-img" src="assets/img/Tezos_Logo-Colored.png" />
                     </div>
                 </a>
             </div>
 
         </div>
 
-        <br><br><br>
+        <br>
 
         <!-- silver -->
 
-        <h3 id="sponsor-head" class="text-center">Silver Sponsors</h3>
+        <h3 id="sponsor-head" class="text-center" style="color: #C0C0C0;">Silver Sponsors</h3>
 
         <div class="row pt-3 pb-3">
 
-            <div class="col-lg-3">
+            <div class="col-lg-4">
                 <a href="">
                     <div id="card-body">
-                        <img class="bd-placeholder-img" width="160" height="100" src="assets/img/clients/client-2.png" />
+                        <img class="bd-placeholder-img" src="assets/img/Filecoin Black.svg" />
                     </div>
                 </a>
             </div>
 
-            <div class="col-lg-3">
+            <div class="col-lg-4">
                 <a href="">
                     <div id="card-body">
-                        <img class="bd-placeholder-img" width="160" height="100" src="assets/img/clients/client-2.png" />
+                        <img class="bd-placeholder-img" src="assets/img/Celo Logo Color.png" />
                     </div>
                 </a>
             </div>
 
-            <div class="col-lg-3">
+            <div class="col-lg-4">
                 <a href="">
                     <div id="card-body">
-                        <img class="bd-placeholder-img" width="160" height="100" src="assets/img/clients/client-2.png" />
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-lg-3">
-                <a href="">
-                    <div id="card-body">
-                        <img class="bd-placeholder-img" width="160" height="100" src="assets/img/clients/client-2.png" />
+                        <img class="bd-placeholder-img" src="assets/img/Tezos_Logo-Colored.png" />
                     </div>
                 </a>
             </div>
 
         </div>
+
 
     </div>
 
@@ -499,78 +410,89 @@
     <div id="faq">
 
 
-        <div id="" class="container">
+        <div id="faqs" class="container">
 
-            <h3 id="faq-head" class="text-center pt-5">FAQs</h3>
+            <h3 id="faq-head" class="text-center pt-5">FREQUENTLY ASKED QUESTIONS</h3>
 
-            <div class="accordion accordion-flush" id="accordionFlushExample">
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingOne">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                      
-                        WHAT IS A HACKATHON?
-                    </button>
-                    </h2>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            A hackathon is social coding event where programmers, designers and developers collaborate to solve a problem and compete for cash prizes. It’s one part party, one part work-hard overnight battle against the clock and the competition.</div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                            WHY WOULD SOMEONE PARTICIPATE IN A HACKATHON?
-                    </button>
-                    </h2>
-                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">People participate in hackathons for lots of reason: the challenge, the creative outlet, the community collaboration, the networking, the swag and maybe Prizes!</div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                            WHO CAN PARTICIPATE? ARE THERE ANY PREREQUISITES OR REQUIRED SKILLS?
-                    </button>
-                    </h2>
-                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Anyone is welcome to participate in this event. While experience coding and programming is a huge plus, teams will also need people with strong presentation skills and brilliant ideas.
-                        </div>
+            <hr>
+
+            <div class="row pt-3 pb-3">
+
+                <div class="col-lg-4">
+                    <div id="faq-card-body">
+                        <p id="faq-q">What is Hackathon?</p>
                     </div>
                 </div>
 
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingFour">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseTwo">
-                            WHY WOULD SOMEONE PARTICIPATE IN A HACKATHON?
-                    </button>
-                    </h2>
-                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">People participate in hackathons for lots of reason: the challenge, the creative outlet, the community collaboration, the networking, the swag and maybe Prizes!</div>
+                <div class="col-lg-8">
+                    <div id="faq-card-body">
+                        <p id="faq-a">
+                            A hackathon is social coding event where programmers, designers and developers collaborate to solve a problem and compete for cash prizes. It’s one part party, one part work-hard overnight battle against the clock and the competition.</p>
                     </div>
                 </div>
 
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingFive">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseTwo">
-                            WHY WOULD SOMEONE PARTICIPATE IN A HACKATHON?
-                    </button>
-                    </h2>
-                    <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">People participate in hackathons for lots of reason: the challenge, the creative outlet, the community collaboration, the networking, the swag and maybe Prizes!</div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingSix">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseTwo">
-                            WHY WOULD SOMEONE PARTICIPATE IN A HACKATHON?
-                    </button>
-                    </h2>
-                    <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">People participate in hackathons for lots of reason: the challenge, the creative outlet, the community collaboration, the networking, the swag and maybe Prizes!</div>
-                    </div>
-                </div>
             </div>
+
+            <hr>
+
+            <div class="row pt-3 pb-3">
+
+                <div class="col-lg-4">
+                    <div id="faq-card-body">
+                        <p id="faq-q">What is Hackathon?</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-8">
+                    <div id="faq-card-body">
+                        <p id="faq-a">
+                            A hackathon is social coding event where programmers, designers and developers collaborate to solve a problem and compete for cash prizes. It’s one part party, one part work-hard overnight battle against the clock and the competition.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="row pt-3 pb-3">
+
+                <div class="col-lg-4">
+                    <div id="faq-card-body">
+                        <p id="faq-q">What is Hackathon?</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-8">
+                    <div id="faq-card-body">
+                        <p id="faq-a">
+                            A hackathon is social coding event where programmers, designers and developers collaborate to solve a problem and compete for cash prizes. It’s one part party, one part work-hard overnight battle against the clock and the competition.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="row pt-3 pb-3">
+
+                <div class="col-lg-4">
+                    <div id="faq-card-body">
+                        <p id="faq-q">What is Hackathon?</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-8">
+                    <div id="faq-card-body">
+                        <p id="faq-a">
+                            A hackathon is social coding event where programmers, designers and developers collaborate to solve a problem and compete for cash prizes. It’s one part party, one part work-hard overnight battle against the clock and the competition.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr>
+
+
         </div>
     </div>
 
@@ -604,8 +526,22 @@
 
     <!-- Optional JavaScript; choose one of the two! -->
 
+    <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
+
     <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+    <script>
+        $(function() {
+            $(document).scroll(function() {
+                var $nav = $("#mainNavbar");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--

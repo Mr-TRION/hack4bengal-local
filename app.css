@@ -1,6 +1,46 @@
-/* ================================================================= */
+.navbar.scrolled {
+    background: #142959;
+    transition: background 500ms;
+}
 
 #logo-img {
+    width: 50px;
+    height: 50px;
+}
+
+#brand-name {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: white;
+    letter-spacing: 1px;
+}
+
+#brand-sub {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+#navbar-links {
+    margin-left: 20%;
+    padding-top: 10px;
+}
+
+#nav-items {
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: all 0.2s;
+    font-size: 16px;
+}
+
+#nav-items:hover {
+    color: rgb(0, 119, 255);
+    text-decoration: underline;
+}
+
+
+/* #logo-img {
     width: 50px;
     height: 50px;
 }
@@ -13,7 +53,12 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 28px;
     font-weight: 600;
-    color: rgb(255, 81, 0);
+    color: black;
+}
+
+#brand-sub {
+    font-size: 32px;
+    font-weight: 600;
 }
 
 #toggle-icon {
@@ -21,7 +66,7 @@
 }
 
 #nav {
-    background-color: white;
+    background-color: transparent;
 }
 
 #nav-items {
@@ -36,17 +81,24 @@
     text-decoration: underline;
 }
 
-#myCarousel {
-    margin-top: 5%;
+*/
+
+#myCarousel-inner {
+    /* margin-top: 5%; */
+    height: 90vh;
+}
+
+#svg {
+    background-color: rgb(30, 202, 30);
 }
 
 #carousel-btn {
-    border: 1px solid transparent;
-    background-color: rgb(0, 195, 255);
+    border: 2px solid rgb(0, 153, 255);
+    background-color: #142959;
     color: white;
     border-radius: 34.5px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
     padding-top: 7px;
     padding-bottom: 7px;
     text-decoration: none;
@@ -56,21 +108,32 @@
 #carousel-btn:hover {
     text-decoration: underline;
     background-color: rgb(0, 153, 255);
+    box-shadow: 2px 1px 23px 8px rgba(10, 165, 255, 0.75);
+    -webkit-box-shadow: 2px 1px 23px 8px rgba(10, 165, 255, 0.75);
+    -moz-box-shadow: 2px 1px 23px 8px rgba(10, 165, 255, 0.75);
+}
+
+#main-content {
+    /* margin-top: -5%; */
 }
 
 #main-btn {
-    border: 1px solid transparent;
-    background-color: rgb(0, 195, 255);
+    border: 2px solid rgb(0, 153, 255);
+    background-color: rgb(24, 31, 58);
     color: white;
     border-radius: 34.5px;
-    padding-left: 15px;
-    padding-right: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
     padding-top: 7px;
     padding-bottom: 7px;
     text-decoration: none;
     text-align: center;
     transition: 0.3s;
     cursor: pointer;
+    box-shadow: 2px 1px 23px 8px rgba(10, 165, 255, 0.75);
+    -webkit-box-shadow: 2px 1px 23px 8px rgba(10, 165, 255, 0.75);
+    -moz-box-shadow: 2px 1px 23px 8px rgba(10, 165, 255, 0.75);
 }
 
 #main-btn:hover {
@@ -109,12 +172,13 @@
 
 #about {
     font-family: 'Roboto', sans-serif;
+    font-weight: 300;
     font-size: 18px;
 }
 
 #about-1 {
-    background-color: black;
-    color: white;
+    background-color: #fff;
+    color: black;
 }
 
 #about-ul {
@@ -123,16 +187,23 @@
 
 #about-list {
     font-family: 'Roboto', sans-serif;
+    font-weight: 300;
     font-size: 18px;
 }
 
 #snu-about {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
+    font-weight: 300;
 }
 
 #about-details {
-    background-color: rgb(0, 0, 0);
+    background: #142959;
+    transform: skewY( 356deg);
+}
+
+#about-details-in {
+    transform: skewY(364deg);
 }
 
 #main {
@@ -142,9 +213,11 @@
 #about-list-head {
     font-weight: 700;
     font-size: 32px;
+    font-weight: 300;
 }
 
 #about-list-desc {
+    font-weight: 300;
     color: black;
     font-family: 'Roboto', sans-serif;
 }
@@ -154,6 +227,21 @@
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+#about-img {
+    width: 600px;
+    height: 600px;
+}
+
+@media screen and (max-width: 780px) {
+    #about-img {
+        width: 300px;
+        height: 300px;
+    }
+    #navbar-links {
+        margin-left: 5%;
+    }
 }
 
 
@@ -171,8 +259,7 @@
 
 #team {
     margin-top: 5%;
-    background-color: black;
-    color: white;
+    color: black;
 }
 
 #team-head {
@@ -185,7 +272,7 @@
 }
 
 #details-icon {
-    color: white;
+    color: black;
     font-size: 18px;
     padding: 8px;
     transition: 0.3s;
@@ -195,6 +282,7 @@
     color: rgb(0, 118, 253);
     font-size: 18px;
     padding: 8px;
+    font-size: 24px;
 }
 
 #details-name {
@@ -206,6 +294,18 @@
     font-size: 16px;
     color: rgb(180, 175, 175);
     font-family: 'Roboto', sans-serif;
+}
+
+#faq-q {
+    margin-left: 5%;
+    font-size: 24px;
+    color: rgb(31, 63, 104);
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+#faq-a {
+    margin-right: 5%;
 }
 
 #footer-details {
